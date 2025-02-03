@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad Distrital - Primer Semestre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="logo.png" alt="Logo Universidad Distrital" class="h-10">
+            <button id="menuMobile" class="md:hidden text-white">☰</button>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-4 text-white">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#calendar">Calendario</a></li>
+                    <li><a href="#notifications">Notificaciones</a></li>
+                    <li><a href="#resources">Recursos</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4">
+        <section id="home" class="my-8">
+            <div class="carousel w-full">
+                <img src="welcome1.jpg" alt="Bienvenida 1" class="w-full">
+                <!-- Agregar más imágenes para el carrusel -->
+            </div>
+            <div class="announcements mt-4">
+                <h2 class="text-xl font-bold">Anuncios</h2>
+                <ul>
+                    <li>Clases comenzarán el 2 de Marzo</li>
+                    <!-- Más anuncios -->
+                </ul>
+            </div>
+        </section>
+
+        <section id="calendar" class="my-8">
+            <h2 class="text-2xl font-bold">Calendario Académico</h2>
+            <!-- Aquí iría el calendario, puedes usar una librería como FullCalendar -->
+        </section>
+
+        <section id="notifications" class="my-8">
+            <h2 class="text-2xl font-bold">Notificaciones</h2>
+            <!-- Aquí irían las notificaciones -->
+        </section>
+
+        <section id="resources" class="my-8">
+            <h2 class="text-2xl font-bold">Recursos</h2>
+            <!-- Grid de recursos -->
+        </section>
+
+        <section id="faq" class="my-8">
+            <h2 class="text-2xl font-bold">Preguntas Frecuentes</h2>
+            <!-- Preguntas desplegables -->
+        </section>
+
+        <section id="contact" class="my-8">
+            <h2 class="text-2xl font-bold">Contacto</h2>
+            <!-- Formulario de contacto -->
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto">
+            <!-- Aquí irían los enlaces a redes sociales, créditos, etc. -->
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript para el menú mobile
+        document.getElementById('menuMobile').addEventListener('click', function() {
+            // Lógica para mostrar/ocultar el menú
+        });
+
+        // Aquí iría más JavaScript para las funcionalidades dinámicas
+    </script>
+</body>
+</html>

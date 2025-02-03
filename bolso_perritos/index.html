@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolso para Perros - Innovación para Mascotas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Transiciones y animaciones */
+    .fade-in {
+      animation: fadeIn 1s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .visible {
+      display: block;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white transition duration-300">
+  <!-- Contenedor principal -->
+  <div id="app">
+
+    <!-- Pantalla 1 -->
+    <section id="screen1" class="flex flex-col justify-center items-center h-screen bg-gradient-to-r from-blue-400 to-indigo-600 text-white">
+      <h1 class="text-4xl font-bold fade-in mb-4" id="welcome-text"></h1>
+      <button id="next-btn1" class="bg-white text-indigo-600 font-bold px-6 py-3 rounded-xl mt-4">Ir</button>
+    </section>
+
+    <!-- Pantalla 2 -->
+    <section id="screen2" class="hidden h-screen px-8 py-16 flex flex-col justify-center items-center">
+      <h2 class="text-3xl font-bold mb-8">Detalles del Producto</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Material resistente e impermeable.</li>
+            <li>Dimensiones: 40x25x20 cm.</li>
+            <li>Opciones de personalización disponibles.</li>
+            <li>Compartimientos adicionales para accesorios.</li>
+            <li>Capacidad para perros hasta 10 kg.</li>
+          </ul>
+        </div>
+        <div>
+          <img src="https://i.pinimg.com/736x/da/5b/75/da5b75363de80748f44233c431d432ec.jpg" alt="Bolso para perros" class="rounded-xl">
+        </div>
+      </div>
+      <button id="next-btn2" class="bg-indigo-500 text-white px-6 py-3 rounded-xl mt-8">Continuar</button>
+    </section>
+
+    <!-- Pantalla 3 -->
+    <section id="screen3" class="hidden h-screen bg-gray-200 dark:bg-gray-800 px-8 py-16 text-center">
+      <h2 class="text-3xl font-bold mb-4">Contáctanos</h2>
+      <p class="mb-8">¡Obtén el mejor accesorio para tu perro hoy mismo!</p>
+      <img src="https://i.pinimg.com/736x/13/d0/11/13d011ab987c4e146b7ca8ed6004c4d9.jpg" alt="Bolso futurista" class="rounded-xl mx-auto mb-8">
+      <a href="https://wa.me/573009563427?text=Hola%20estoy%20interesado%20en%20el%20Bolso%20para%20Perros%20innovador" target="_blank" class="bg-green-500 text-white px-6 py-3 rounded-full">Contáctanos por WhatsApp</a>
+    </section>
+
+  </div>
+
+  <!-- Modo oscuro -->
+  <div class="fixed top-4 right-4">
+    <label class="flex items-center space-x-2">
+      <span>Modo Oscuro</span>
+      <input type="checkbox" id="theme-toggle" class="appearance-none w-6 h-6 bg-gray-300 rounded-full cursor-pointer checked:bg-indigo-600 transition" />
+    </label>
+  </div>
+
+  <script>
+    // Referencias de elementos
+    const screen1 = document.getElementById('screen1');
+    const screen2 = document.getElementById('screen2');
+    const screen3 = document.getElementById('screen3');
+    const nextBtn1 = document.getElementById('next-btn1');
+    const nextBtn2 = document.getElementById('next-btn2');
+    const welcomeText = document.getElementById('welcome-text');
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Funciones para cambiar de pantalla
+    nextBtn1.addEventListener('click', () => {
+      screen1.classList.add('hidden');
+      screen2.classList.remove('hidden');
+    });
+
+    nextBtn2.addEventListener('click', () => {
+      screen2.classList.add('hidden');
+      screen3.classList.remove('hidden');
+    });
+
+    // Animación del texto de bienvenida
+    const welcomeMessage = 'Bienvenido, encuentra el mejor bolso para tu amiguito.';
+    let charIndex = 0;
+    function typeWriter() {
+      if (charIndex < welcomeMessage.length) {
+        welcomeText.textContent += welcomeMessage.charAt(charIndex);
+        charIndex++;
+        setTimeout(typeWriter, 100);
+      }
+    }
+    typeWriter();
+
+    // Cambio de tema
+    themeToggle.addEventListener('change', () => {
+      body.classList.toggle('dark', themeToggle.checked);
+    });
+  </script>
+</body>
+</html>
