@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Gallery's Dreamer</title>
+
+    <style>
+        .relative .first-image{
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!--Contendor global-->
+    <div class="flex items-center justify-center min-h-screen bg-gray-100">
+        <!--Contenedor card-->
+        <div class="bg-white shadow-lg space-y-10 rounded-lg p-6 md:p-40">
+            <!--Nav container-->
+            <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 items-center md:justify-end mb-6 md:mb-24">
+                <!--Nav item 1-->
+                <div class="group flex flex-col space-y-1">
+                    <a href="#" class="font-normal font-serif">Vector</a>
+                    <div class="border border-gray-400 opacity-0 group-hover:opacity-100 duration-200"></div>
+                </div>
+
+                <!--Nav item 2-->
+                <div class="group flex flex-col space-y-1">
+                    <a href="#" class="font-normal font-serif">Illustrations</a>
+                    <div class="border border-gray-400 opacity-0 group-hover:opacity-100 duration-200"></div>
+                </div>
+
+                <!--Nav item 3-->
+                <div class="group flex flex-col space-y-1">
+                    <a href="#" class="font-normal font-serif">Images</a>
+                    <div class="border border-gray-400 opacity-0 group-hover:opacity-100 duration-200"></div>
+                </div>
+
+                <!--Nav item 4-->
+                <div class="group flex flex-col space-y-1">
+                    <a href="#" class="font-normal font-serif">Icons</a>
+                    <div class="border border-gray-400 opacity-0 group-hover:opacity-100 duration-200"></div>
+                </div>
+            </div>
+
+            <!--Input and button container-->
+
+            <div class="flex flex-col space-y-4 justify-center md:justify-between md:flex-row md:space-y-0 md:space-x-4">
+                <!--Input and Svg container-->
+
+                <div class="flex group justify-between border-b hover:shadow-md duration-200 ">
+                    <input type="text" class="p-3 px-6 outline-none font-serif text-gray-700"  placeholder="Search">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 text-gray-300 duration-200 hover:scale-110" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <circle cx="10" cy="10" r="7"></circle>
+                            <line x1="21" y1="21" x2="15" y2="15"></line>
+                          </svg>
+                    </button>
+                </div>
+
+                <button class="bg-black px-8 py-2 text-white font-semibold text-sm rounded-lg capitalize hover:bg-white hover:text-black hover:shadow-lg">upload</button>
+
+
+            </div>
+
+            <!--grid container-->
+
+            <div class="grid md:grid-cols-3 gap-4 lg:grid-cols-5 xl:grid-cols-6">
+                
+                <!--Image 1-->
+                <div class="relative group cursor-pointer hover:shadow-lg ">
+                    <img src="./picts_dreamer/img_1.png" class=" first-image rounded-sm rounded-lg" alt="img-1">
+                    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 bg-black bg-opacity-40 text-white duration-500 opacity-0 group-hover:opacity-100 ">
+                        <!--Card effect-->
+                        <div class="flex justify-between w-full">
+                            <!--Text content-->
+                             <div class="font-normal font-serif">
+                                <p class="text-sm">Abstract painting</p>
+                                <p class="text-xs">245 likes - 35 Shares</p>
+                             </div>
+
+                            <!--Icon-->
+                            <div class="flex items-center">
+                                <img src="./images/bookmark.svg" alt="bookmark-icon">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                 <!--Image 2-->
+                 <div class="relative group cursor-pointer hover:shadow-lg ">
+                    <img src="./picts_dreamer/img_2.png" class=" first-image w-64 rounded-sm rounded-lg" alt="img-1">
+                    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 bg-black bg-opacity-40 text-white duration-500 opacity-0 group-hover:opacity-100 ">
+                        <!--Card effect-->
+                        <div class="flex justify-between w-full">
+                            <!--Text content-->
+                             <div class="font-normal font-serif">
+                                <p class="text-sm">Abstract painting</p>
+                                <p class="text-xs">245 likes - 35 Shares</p>
+                             </div>
+
+                            <!--Icon-->
+                            <div class="flex items-center">
+                                <img src="./images/bookmark.svg" alt="bookmark-icon">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                  <!--Image 3-->
+                  <div class="relative group cursor-pointer hover:shadow-lg ">
+                    <img src="./picts_dreamer/img_3.png"  class=" first-image  w-64 rounded-sm rounded-lg" alt="img-1">
+                    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 bg-black bg-opacity-40 text-white duration-500 opacity-0 group-hover:opacity-100 ">
+                        <!--Card effect-->
+                        <div class="flex justify-between w-full">
+                            <!--Text content-->
+                             <div class="font-normal font-serif">
+                                <p class="text-sm">Abstract painting</p>
+                                <p class="text-xs">245 likes - 35 Shares</p>
+                             </div>
+
+                            <!--Icon-->
+                            <div class="flex items-center">
+                                <img src="./images/bookmark.svg" alt="bookmark-icon">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                  <!--Image 4-->
+                  <div class="relative group cursor-pointer hover:shadow-lg ">
+                    <img src="./picts_dreamer/img_4.png"  class=" first-image w-64 rounded-sm rounded-lg" alt="img-1">
+                    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 bg-black bg-opacity-40 text-white duration-500 opacity-0 group-hover:opacity-100 ">
+                        <!--Card effect-->
+                        <div class="flex justify-between w-full">
+                            <!--Text content-->
+                             <div class="font-normal font-serif">
+                                <p class="text-sm">Abstract painting</p>
+                                <p class="text-xs">245 likes - 35 Shares</p>
+                             </div>
+
+                            <!--Icon-->
+                            <div class="flex items-center">
+                                <img src="./images/bookmark.svg" alt="bookmark-icon">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                  <!--Image 5-->
+                  <div class="relative group cursor-pointer hover:shadow-lg ">
+                    <img src="./picts_dreamer/img_5.png" class=" first-image w-64 rounded-sm rounded-lg" alt="img-1">
+                    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 bg-black bg-opacity-40 text-white duration-500 opacity-0 group-hover:opacity-100 ">
+                        <!--Card effect-->
+                        <div class="flex justify-between w-full">
+                            <!--Text content-->
+                             <div class="font-normal font-serif">
+                                <p class="text-sm">Abstract painting</p>
+                                <p class="text-xs">245 likes - 35 Shares</p>
+                             </div>
+
+                            <!--Icon-->
+                            <div class="flex items-center">
+                                <img src="./images/bookmark.svg" alt="bookmark-icon">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                  <!--Image 6-->
+                  <div class="relative group cursor-pointer hover:shadow-lg ">
+                    <img src="./picts_dreamer/img_6.png"  class="first-image w-64 rounded-sm rounded-lg" alt="img-1">
+                    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 bg-black bg-opacity-40 text-white duration-500 opacity-0 group-hover:opacity-100 ">
+                        <!--Card effect-->
+                        <div class="flex justify-between w-full">
+                            <!--Text content-->
+                             <div class="font-normal font-serif">
+                                <p class="text-sm">Abstract painting</p>
+                                <p class="text-xs">245 likes - 35 Shares</p>
+                             </div>
+
+                            <!--Icon-->
+                            <div class="flex items-center">
+                                <img src="./images/bookmark.svg" alt="bookmark-icon">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+            
+
+
+        </div>
+    </div>
+</body>
+</html>
